@@ -1,0 +1,247 @@
+html {
+  background-color: #545454; 
+}
+body {
+  background-color: #a6a6a6;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(#a6a6a6), color-stop(5%, #979797), color-stop(45%, #545454));
+  background-image: -webkit-linear-gradient(#a6a6a6, #979797 5%, #545454 45%);
+  background-image: -moz-linear-gradient(#a6a6a6, #979797 5%, #545454 45%);
+  background-image: -o-linear-gradient(#a6a6a6, #979797 5%, #545454 45%);
+  background-image: -ms-linear-gradient(#a6a6a6, #979797 5%, #545454 45%);
+  background-image: linear-gradient(#a6a6a6, #979797 5%, #545454 45%);
+}
+#wrapper
+{
+	width: 960px;
+	margin:0 auto 20px auto;
+}
+/* Reset Browser margin */
+figure {
+  margin:0;
+}
+
+
+.pills {
+	float: right;
+	display: inline;
+	margin: 7px 7px 0px 7px;
+}
+
+.pills a {
+    background: none repeat scroll 0 0 #444444;
+    color: #FFFFFF;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.pills .active a {
+    background: none repeat scroll 0 0 #444444;
+    color: #FFFFFF;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.pills .active a:hover {
+    background: none repeat scroll 0 0 #0050A3;
+    color: #FFFFFF;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.pills .hover a {
+    background: none repeat scroll 0 0 #0050A3;
+    color: #FFFFFF;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+#title {
+	display:inline;
+}
+
+
+#bin1, #bin2 {
+  width: 280px;
+  padding:8px 0 0 0;
+  min-height: 500px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(7%, #eeeeee), color-stop(75%, #cccccc), color-stop(95%, #aaaaaa));
+  background-image: -webkit-linear-gradient(#eeeeee 7%, #cccccc 75%, #aaaaaa 95%);
+  background-image: -moz-linear-gradient(#eeeeee 7%, #cccccc 75%, #aaaaaa 95%);
+  background-image: -o-linear-gradient(#eeeeee 7%, #cccccc 75%, #aaaaaa 95%);
+  background-image: -ms-linear-gradient(#eeeeee 7%, #cccccc 75%, #aaaaaa 95%);
+  background-image: linear-gradient(#eeeeee 7%, #cccccc 75%, #aaaaaa 95%);
+  margin:10px 20px 0 0 ;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 2px 2px 8px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.5), inset 2px 2px 8px rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 2px 2px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.5), inset 2px 2px 16px rgba(0, 0, 0, 0.25);
+}
+.well {
+  padding:0;
+  border:none;
+}
+#bin1, #bin2, #canvas {
+  float: left;
+  text-align:center;
+}
+
+#instructions {
+	color: #F5F5F5;
+	text-align:center;
+	margin:20px 0 0 0;
+}
+
+em {
+color:yellow;
+}
+
+#fairuse {
+	margin:25px 0 0 0;
+}
+
+#fairuse p { 
+		font-size:10px;
+		line-height:10px;
+	}
+	
+
+h1 {
+  font-size:2.5em;
+  color:#444;
+  line-height:1.5em;
+  text-shadow: #ddd 0px 1px 2px;
+  margin:0;
+
+}
+
+#bin1 h1 {
+font-size: 20px;
+color: #DC63C2;
+}
+
+
+#bin2 h1 {
+font-size: 20px;
+color: #64ABD0;
+
+}
+
+
+
+#bin2 {
+  float: right;
+  margin:10px 0 0 20px;
+}
+
+.bin-area {
+  background-image: url(../images/videobin-place-holder.png);
+  min-height:560px;
+}
+
+#canvas {
+  margin:10px 0 32px 0;
+  width:360px;
+  background: none;
+  float: left;
+  min-height:180px; 
+}
+
+.thumb {
+  background: #333;
+  margin: 4px 0px 16px 16px;
+  width: 250px;
+  float:left;
+  height:150px;
+}
+
+.thumb video {
+  width: 128px;
+}
+#audioSource .thumb, #videoSource .thumb {
+  margin:8px;
+}
+
+.loading #mashup {
+	background-image: url('../images/loader.gif');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.loading #mashup video {
+	visibility: hidden;
+}
+
+#mashup .thumb {
+  margin:auto;
+  text-align:center;
+  width:320px;
+  background:#000;
+  height:100%;
+}
+#mashup .thumb video {
+  width: 100%;
+  max-width: 100%;
+  
+}
+[draggable=true] {
+  cursor: move;
+}
+
+#audioSource, #videoSource {
+  width: 164px;
+  height: 115px;
+  text-align:center;
+  background-image: url(../images/icons.png), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop( #eeeeee), color-stop(95%, #cccccc));
+  background-image: url(../images/icons.png), -webkit-linear-gradient(#eeeeee, #cccccc 95%);
+  background-image: url(../images/icons.png), -moz-linear-gradient(#eeeeee, #cccccc 95%);
+  background-image: url(../images/icons.png), -o-linear-gradient(#eeeeee, #cccccc 95%);
+  background-image: url(../images/icons.png), -ms-linear-gradient(#eeeeee, #cccccc 95%);
+  background-image: url(../images/icons.png), linear-gradient(#eeeeee, #cccccc 95%);
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
+  -moz-box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.5), inset 2px 2px 8px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.5), inset 2px 2px 8px rgba(0, 0, 0, 0.25);
+  -o-box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.5), inset 2px 2px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.5), inset 2px 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+#audioSource {
+  float: left;
+  background-position:10px 50%;
+  
+}
+
+#videoSource {
+  float: right;
+  background-position:190px 50%;
+}
+
+#mashup {
+	height:203px;
+	width: 360px;
+	background: #333;	
+}
+
+
+#controls {
+  margin:2em  0;
+	text-align:center;
+}
+
+#newVideo {
+  width: 100%;
+}
+
+#droppables section {
+background: #eee;
+}
+
+.audioSource, .videoSource {
+  margin:8px;
+}
