@@ -97,6 +97,18 @@ em {
 color:yellow;
 }
 
+em a {
+font-style: italic;
+color:orange;
+}
+
+em a:hover {
+font-style: italic;
+color:lime;
+text-decoration: none;
+}
+
+
 #fairuse {
 	margin:25px 0 0 0;
 }
